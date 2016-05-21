@@ -9,6 +9,7 @@
  * @author josue.junior
  */
 public class FRMVeiculo extends javax.swing.JFrame {
+    private static FRMVeiculo frameMenu;
 
     /**
      * Creates new form FRMVeiculo
@@ -56,6 +57,11 @@ public class FRMVeiculo extends javax.swing.JFrame {
         jMenu1.setText("Cadastrar");
 
         jMenuItem1.setText("Veículo");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Colaborador");
@@ -67,6 +73,11 @@ public class FRMVeiculo extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Sair");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -85,6 +96,18 @@ public class FRMVeiculo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        FRMVeiculo_cad.abrir();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+                                            
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        //FRMFornecedor.abrir();
+    }                              
     /**
      * @param args the command line arguments
      */
@@ -115,7 +138,9 @@ public class FRMVeiculo extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRMVeiculo().setVisible(true);
+                 frameMenu = new FRMVeiculo();
+                frameMenu.setVisible(true);
+                //new FRMVeiculo().setVisible(true);
             }
         });
     }
