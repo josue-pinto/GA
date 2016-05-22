@@ -253,7 +253,7 @@ public class FRMVeiculo_cad extends javax.swing.JFrame {
                 frame = new FRMVeiculo_cad();
                 frame.setVisible(true);
                 frameMenu = new FRMVeiculo();
-                //new Calculadora().setVisible(true);
+                
                 
             }
         });
