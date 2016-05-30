@@ -56,7 +56,7 @@ public class FRMFornecedor extends javax.swing.JFrame {
         jLabel2.setLabelFor(cboRamoAtividade);
         jLabel2.setText("CNPJ");
 
-        jLabel4.setText("Observação");
+        jLabel4.setText("Observação:");
 
         jButton1.setText("SAIR");
 
@@ -74,7 +74,7 @@ public class FRMFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("Relatorios");
+        jButton4.setText("Relatórios");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
