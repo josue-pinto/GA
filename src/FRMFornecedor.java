@@ -67,7 +67,7 @@ public class FRMFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Excuir");
+        jButton3.setText("Excluir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
