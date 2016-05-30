@@ -116,9 +116,9 @@
                       </Group>
                       <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="sair" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="456" max="32767" attributes="0"/>
+                  <EmptySpace pref="435" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
