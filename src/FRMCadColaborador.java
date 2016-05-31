@@ -99,6 +99,17 @@ public class FRMCadColaborador extends javax.swing.JFrame {
         sair = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        excluir = new javax.swing.JButton();
+        jTextFieldExcluir = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jInternalFrame2 = new javax.swing.JInternalFrame();
+        jButton3 = new javax.swing.JButton();
+        jTextField1MatAlt = new javax.swing.JTextField();
+        jTextFieldNomeAlt = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -149,6 +160,108 @@ public class FRMCadColaborador extends javax.swing.JFrame {
             }
         });
 
+        jInternalFrame1.setTitle("Excluir Matrícula");
+        jInternalFrame1.setVisible(true);
+
+        jDesktopPane1.setBackground(new java.awt.Color(255, 0, 51));
+
+        excluir.setText("excluir");
+        excluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Matricula");
+
+        jDesktopPane1.setLayer(excluir, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jTextFieldExcluir, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(excluir)
+                    .addComponent(jLabel5)
+                    .addComponent(jTextFieldExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addComponent(excluir)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jInternalFrame2.setTitle("Alterar Nome");
+        jInternalFrame2.setVisible(true);
+
+        jButton3.setText("Alterar Nome");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Matricula");
+
+        jLabel7.setText("Nome");
+
+        javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
+        jInternalFrame2.getContentPane().setLayout(jInternalFrame2Layout);
+        jInternalFrame2Layout.setHorizontalGroup(
+            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton3)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jTextFieldNomeAlt, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                    .addComponent(jTextField1MatAlt))
+                .addContainerGap(45, Short.MAX_VALUE))
+        );
+        jInternalFrame2Layout.setVerticalGroup(
+            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame2Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldNomeAlt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1MatAlt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton3)
+                .addContainerGap(96, Short.MAX_VALUE))
+        );
+
         jLayeredPane2.setLayer(fFuncao, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(fMatricula, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -160,6 +273,8 @@ public class FRMCadColaborador extends javax.swing.JFrame {
         jLayeredPane2.setLayer(sair, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(jInternalFrame1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(jInternalFrame2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
         jLayeredPane2.setLayout(jLayeredPane2Layout);
@@ -175,20 +290,27 @@ public class FRMCadColaborador extends javax.swing.JFrame {
                 .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane2Layout.createSequentialGroup()
                         .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(sair)
-                        .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fNome, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fFuncao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(fNome, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+                            .addComponent(fFuncao, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fMatricula, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4))
                         .addGap(59, 59, 59))))
+            .addGroup(jLayeredPane2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(sair)
+                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
+                        .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jInternalFrame2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 16, Short.MAX_VALUE))
         );
         jLayeredPane2Layout.setVerticalGroup(
             jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,10 +334,14 @@ public class FRMCadColaborador extends javax.swing.JFrame {
                         .addComponent(jButton1))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sair)
-                    .addComponent(jButton2))
-                .addContainerGap(456, Short.MAX_VALUE))
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jInternalFrame1)
+                    .addComponent(jInternalFrame2))
+                .addGap(18, 18, 18)
+                .addComponent(sair)
+                .addContainerGap(138, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -225,7 +351,7 @@ public class FRMCadColaborador extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLayeredPane2)
-                .addGap(485, 485, 485))
+                .addGap(507, 507, 507))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,9 +398,52 @@ public class FRMCadColaborador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        FRMRelColaborador.abrir(); 
+        //NovoMasterDetailForm nomeVariavel = new NovoMasterDetailForm();
+        //frame.setVisible(false); 
+        //nomeVariavel.run();
+        new NovoMasterDetailForm().setVisible(true);
+        dispose();
+        
+        //FRMRelColaborador.abrir(); 
        // frame.setVisible(false); 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/locadora", "root", "");
+            java.sql.Statement st = conn.createStatement();
+            st.executeUpdate("DELETE from colaborador WHERE matricula = ('"
+                    + this.jTextFieldExcluir.getText() + "')");
+                    
+             
+            
+            JOptionPane.showMessageDialog(rootPane, "usuario matricula excluida!");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(FRMCadColaborador.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(FRMCadColaborador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_excluirActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/locadora", "root", "");
+            java.sql.Statement st = conn.createStatement();
+            st.executeUpdate("UPDATE colaborador SET nome = '" 
+                            + this.jTextFieldNomeAlt.getText() + "' WHERE matricula = '"
+                            + this.jTextField1MatAlt.getText() + "'");
+                    
+             
+            
+            JOptionPane.showMessageDialog(rootPane, "nome do usuario alterado!");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(FRMCadColaborador.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(FRMCadColaborador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -313,19 +482,30 @@ public class FRMCadColaborador extends javax.swing.JFrame {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton excluir;
     private javax.swing.JComboBox<String> fFuncao;
     private javax.swing.JTextField fMatricula;
     private javax.swing.JTextField fNome;
     private javax.swing.JTextArea fObservacao;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1MatAlt;
+    private javax.swing.JTextField jTextFieldExcluir;
+    private javax.swing.JTextField jTextFieldNomeAlt;
     private javax.swing.JButton sair;
     // End of variables declaration//GEN-END:variables
 }

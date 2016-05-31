@@ -31,6 +31,8 @@ public class FRMVeiculo extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         canvas1 = new java.awt.Canvas();
         canvas2 = new java.awt.Canvas();
         jPanel1 = new javax.swing.JPanel();
@@ -56,6 +58,8 @@ public class FRMVeiculo extends javax.swing.JFrame {
             }
         ));
         jScrollPane2.setViewportView(jTable1);
+
+        jMenuItem4.setText("jMenuItem4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,6 +98,11 @@ public class FRMVeiculo extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu4.setText("Sobre");
+        jMenu4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu4ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu4);
 
         jMenu2.setText("Sair");
@@ -157,6 +166,11 @@ public class FRMVeiculo extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         FRMCadColaborador.abrir();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
+        new NovoMasterDetailForm().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jMenu4ActionPerformed
                                             
 
                                
@@ -211,7 +225,9 @@ public class FRMVeiculo extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
